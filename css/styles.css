@@ -1,13 +1,79 @@
-body {
-    background-color: #fbfbf9;
+:root {
+
+  /* Font */
+
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Text colors  */
+
+  --main-txt-cl: #FFFFFF;
+  --secondary-txt-cl: #2E2F42;
+  --accent-txt-cl: #404BBF;
+  --logo-light-txt-cl: #F4F4FD;
+  --footer-light-txt-cl: #E7E9FC;
+  --dark-txt-cl: #2E2F42;
+  --grey-txt-cl: #434455;
+  --blue-txt-cl: #4D5AE5;
+
+  /* Background colors */
+
+  --main-bg-cl: #ffffff;
+  --accent-bg-cl: #404BBF;
+  --light-bg-cl: #ffffff;
+  --dark-bg-cl:
+    --grey-bg-cl:
+    /* Others */
 }
 
-@font-face {
-    font-family: 'FAMILY_NAME';
-    font-style: NORMAL_OR_ITALIC;
-    font-weight: NUMERIC_WEIGHT_VALUE;
-    src: url(FONT_FILE_NAME.woff2) format('woff2');
+
+
+body {
+
+  width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--text-font);
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-of-contact-paragraf);
+  background-color: var(--color-hero);
 }
+
+
+/**
+  |============================
+  | my classes
+  |============================
+*/
+
+.nav {}
+
+.nav-logo {}
+
+.link {}
+
+.nav-header {}
+
+.list {}
+
+.nav-item {}
+
+.nav-link {}
+
+.current {}
+
+.contact-list {}
+
+.contact-item {}
+
+
+/**
+  |============================
+  | my classes
+  |============================
+*/
+
 
 /**
   |============================
@@ -18,9 +84,10 @@ body {
 
 
 
+
 /**
   |============================
-  | Index
+  | Index main
   |============================
 */
 
@@ -30,7 +97,7 @@ body {
 
 /**
   |============================
-  | Portfolio
+  | Portfolio main
   |============================
 */
 
