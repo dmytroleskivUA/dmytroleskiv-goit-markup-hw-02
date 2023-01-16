@@ -10,6 +10,7 @@
   --primary-text-cl: #2E2F42;
   --secondary-txt-cl: #434455;
   --hero-main-txt-cl: #FFFFFF;
+  --light-primary-text-cl: #FFFFFF;
   --accent-txt-cl: #404BBF;
   --blue-txt-cl: #4D5AE5;
   --logo-blue-txt-cl: #4D5AE5;
@@ -19,6 +20,7 @@
   --footer-logo-light-txt-cl: #F4F4FD;
   --footer-light-txt-cl: #E7E9FC;
 
+
   --portfolio-light-txt-cl: #F4F4FD;
 
 
@@ -26,6 +28,8 @@
 
   --main-bg-cl: #FFFFFF;
   --footer-bg-cl: #2E2F42;
+
+  --portfolio-team-bg-cl: #F4F4FD;
 
 }
 
@@ -53,12 +57,14 @@ body {
 
 
 .logo {
-  font-family: var(--secondary-txt-cl);
+  font-family: var(--secondary-font);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--logo-dark-txt-cl);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 footer .logo {
@@ -81,7 +87,7 @@ footer .logo:visited {
 
 /**
   |============================
-  | Header
+  | Header/ Index Main
   |============================
 */
 
@@ -120,6 +126,10 @@ a {
   text-decoration: none;
 }
 
+
+/* Hero */
+
+
 .hero,
 footer {
   background-color: var(--footer-bg-cl);
@@ -149,6 +159,10 @@ footer {
   background-color: var(--accent-txt-cl);
 }
 
+
+/* About */
+
+
 .about-text {
   line-height: 1.5;
 }
@@ -173,10 +187,22 @@ footer {
   color: var(--primary-text-cl);
 }
 
+
+
+/**
+  |============================
+  |  Portfolio Page
+  |============================
+*/
+
+
+
+
+
 .portfolio button {
   background-color: var(--portfolio-light-txt-cl);
   font-weight: 500;
-  color: var(--main-blue);
+  color: var(--blue-txt-cl);
   cursor: pointer;
 
   font-family: var(--main-font);
@@ -188,8 +214,8 @@ footer {
 
 .portfolio button:hover,
 .portfolio button:focus {
-  color: var(--primary-text-color);
-  background-color: var(--main-blue);
+  color: var(--light-primary-text-cl);
+  background-color: var(--blue-txt-cl);
 }
 
 .row-section h2 {
@@ -204,13 +230,10 @@ footer {
 }
 
 .team {
-  background-color: var(--portfolio-team-bgc);
+  background-color: var(--portfolio-team-bg-cl);
 }
 
-.footer-text {
-  color: var(--footer-light-txt-cl);
-  line-height: 1.5;
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -227,39 +250,14 @@ footer {
 }
 
 
-/* Site nav */
-
-
-
-
-/**
-  |============================
-  | Index main
-  |============================
-*/
-
-
-/* Hero */
-
-
-
-
-/* Section */
-
-
-
-/* About */
-
-
-/**
-  |============================
-  | Portfolio main
-  |============================
-*/
-
 
 /**
   |============================
   | Footer
   |============================
 */
+
+.footer-text {
+  color: var(--footer-light-txt-cl);
+  line-height: 1.5;
+}
