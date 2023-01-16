@@ -1,78 +1,49 @@
 :root {
 
-  /* Font */
+  /* Fonts */
 
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
 
   /* Text colors  */
 
-  --main-txt-cl: #FFFFFF;
-  --secondary-txt-cl: #2E2F42;
+  --primary-text-color: #2E2F42;
+  --secondary-txt-cl: #434455;
+  --hero-main-txt-cl: #FFFFFF;
   --accent-txt-cl: #404BBF;
-  --logo-light-txt-cl: #F4F4FD;
+  --logo-blue-txt-cl: #4D5AE5;
+  --hero-button-cl: #4D5AE5;
+  --footer-logo-light-txt-cl: #F4F4FD;
   --footer-light-txt-cl: #E7E9FC;
-  --dark-txt-cl: #2E2F42;
-  --grey-txt-cl: #434455;
-  --blue-txt-cl: #4D5AE5;
+
 
   /* Background colors */
 
-  --main-bg-cl: #ffffff;
-  --accent-bg-cl: #404BBF;
-  --light-bg-cl: #ffffff;
-  --dark-bg-cl:
-    --grey-bg-cl:
-    /* Others */
+  --main-bg-cl: #FFFFFF;
+
 }
 
 
 
 body {
 
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: var(--text-font);
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: var(--color-of-contact-paragraf);
-  background-color: var(--color-hero);
+  background-color: var(--main-bg-cl)
 }
 
 
-/**
-  |============================
-  | my classes
-  |============================
-*/
+.logo {
 
-.nav {}
+  color: #4D5AE5;
+}
 
-.nav-logo {}
+.logo:hover {
+  color: #434455;
+}
 
-.link {}
+.list {
+  list-style: none;
+}
 
-.nav-header {}
-
-.list {}
-
-.nav-item {}
-
-.nav-link {}
-
-.current {}
-
-.contact-list {}
-
-.contact-item {}
-
-
-/**
-  |============================
-  | my classes
-  |============================
-*/
 
 
 /**
@@ -82,6 +53,17 @@ body {
 */
 
 
+/* Site nav */
+
+.site-nav .link {
+  color: #2E2F42;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+
+  color: #404BBF;
+}
 
 
 
@@ -92,8 +74,32 @@ body {
 */
 
 
+/* Hero */
 
 
+
+.hero-title {
+  color: #FFFFFF;
+}
+
+
+/* Section */
+
+
+.section-title {
+  color: #2E2F42;
+}
+
+/* About */
+
+.about-list {
+
+  color: #2E2F42;
+}
+
+.title {
+  color: #434455;
+}
 
 /**
   |============================
@@ -107,3 +113,12 @@ body {
   | Footer
   |============================
 */
+
+width: 1440px;
+margin-left: auto;
+margin-right: auto;
+font-family: var(--text-font);
+font-size: 16px;
+letter-spacing: 0.02em;
+color: var(--color-of-contact-paragraf);
+background-color: var(--color-hero);
